@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
@@ -11,13 +11,14 @@ import "./styles.css";
 // import required modules
 import { Navigation } from "swiper";
 
-import placeholderImage from "./placeholder.png"
+import placeholderImage from "./placeholder.png";
 
 export default function App() {
+  const swiper = useSwiper();
+
   return (
     <div className="slider-entire-component-div">
-      <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-
+      <Swiper navigation={true} modules={[Navigation]} className="mySwiper" navi>
         {/*Slide 1*/}
         <SwiperSlide>
           <div className="slider-content-column">
@@ -29,25 +30,35 @@ export default function App() {
               <ul>
                 <div className="slider-list-item-row">
                   <p className="slider-list-item">•</p>
-                  <p className="slider-list-item">Users can be uniquely identified by several optional fields (e.g. id.
-usemane, email or mobile).</p>
+                  <p className="slider-list-item">
+                    Users can be uniquely identified by several optional fields
+                    (e.g. id. usemane, email or mobile).
+                  </p>
                 </div>
                 <div className="slider-list-item-row">
                   <p className="slider-list-item">•</p>
-                  <p className="slider-list-item">Each user object supports general-purpose fields for verifying identity information (e.g. first name, last name, profile photo, birth date, gender,
-etc.).</p>
+                  <p className="slider-list-item">
+                    Each user object supports general-purpose fields for
+                    verifying identity information (e.g. first name, last name,
+                    profile photo, birth date, gender, etc.).
+                  </p>
                 </div>
                 <div className="slider-list-item-row">
                   <p className="slider-list-item">•</p>
-                  <p className="slider-list-item">JSON metadata field is available for capturing any additional relevant
-information.</p>
+                  <p className="slider-list-item">
+                    JSON metadata field is available for capturing any
+                    additional relevant information.
+                    
+                    <button onClick={() => swiper.slideNext()}>Right Arrow</button>
+                  </p>
                 </div>
               </ul>
             </div>
           </div>
           <div>
-            <img src={placeholderImage} alt="placeholder-image"/>
+            <img src={placeholderImage} alt="placeholder-image" />
           </div>
+          
         </SwiperSlide>
 
         {/*Slide 2*/}
@@ -57,28 +68,35 @@ information.</p>
               <p className="slider-title">Slide 2</p>
             </div>
             <div>
-              <p className="slider-list-item-title">Identity</p>
+              <p className="slider-list-item-title">Identity Second</p>
               <ul>
                 <div className="slider-list-item-row">
                   <p className="slider-list-item">•</p>
-                  <p className="slider-list-item">Users can be uniquely identified by several optional fields (e.g. id.
-usemane, email or mobile).</p>
+                  <p className="slider-list-item">
+                    Users can be uniquely identified by several optional fields
+                    (e.g. id. usemane, email or mobile).
+                  </p>
                 </div>
                 <div className="slider-list-item-row">
                   <p className="slider-list-item">•</p>
-                  <p className="slider-list-item">Each user object supports general-purpose fields for verifying identity information (e.g. first name, last name, profile photo, birth date, gender,
-etc.).</p>
+                  <p className="slider-list-item">
+                    Each user object supports general-purpose fields for
+                    verifying identity information (e.g. first name, last name,
+                    profile photo, birth date, gender, etc.).
+                  </p>
                 </div>
                 <div className="slider-list-item-row">
                   <p className="slider-list-item">•</p>
-                  <p className="slider-list-item">JSON metadata field is available for capturing any additional relevant
-information.</p>
+                  <p className="slider-list-item">
+                    JSON metadata field is available for capturing any
+                    additional relevant information.
+                  </p>
                 </div>
               </ul>
             </div>
           </div>
           <div>
-            <img src={placeholderImage} alt="placeholder-image"/>
+            <img src={placeholderImage} alt="placeholder-image" />
           </div>
         </SwiperSlide>
 
@@ -89,31 +107,38 @@ information.</p>
               <p className="slider-title">Slide 3</p>
             </div>
             <div>
-              <p className="slider-list-item-title">Identity</p>
+              <p className="slider-list-item-title">Identity Third</p>
               <ul>
                 <div className="slider-list-item-row">
                   <p className="slider-list-item">•</p>
-                  <p className="slider-list-item">Users can be uniquely identified by several optional fields (e.g. id.
-usemane, email or mobile).</p>
+                  <p className="slider-list-item">
+                    Users can be uniquely identified by several optional fields
+                    (e.g. id. usemane, email or mobile).
+                  </p>
                 </div>
                 <div className="slider-list-item-row">
                   <p className="slider-list-item">•</p>
-                  <p className="slider-list-item">Each user object supports general-purpose fields for verifying identity information (e.g. first name, last name, profile photo, birth date, gender,
-etc.).</p>
+                  <p className="slider-list-item">
+                    Each user object supports general-purpose fields for
+                    verifying identity information (e.g. first name, last name,
+                    profile photo, birth date, gender, etc.).
+                  </p>
                 </div>
                 <div className="slider-list-item-row">
                   <p className="slider-list-item">•</p>
-                  <p className="slider-list-item">JSON metadata field is available for capturing any additional relevant
-information.</p>
+                  <p className="slider-list-item">
+                    JSON metadata field is available for capturing any
+                    additional relevant information.
+                  </p>
                 </div>
               </ul>
             </div>
           </div>
           <div>
-            <img src={placeholderImage} alt="placeholder-image"/>
+            <img src={placeholderImage} alt="placeholder-image" />
           </div>
         </SwiperSlide>
-        
+
         {/*Slide 4*/}
         <SwiperSlide>
           <div className="slider-content-column">
@@ -121,31 +146,39 @@ information.</p>
               <p className="slider-title">Slide 4</p>
             </div>
             <div>
-              <p className="slider-list-item-title">Identity</p>
+              <p className="slider-list-item-title">Identity Fourth</p>
               <ul>
                 <div className="slider-list-item-row">
                   <p className="slider-list-item">•</p>
-                  <p className="slider-list-item">Users can be uniquely identified by several optional fields (e.g. id.
-usemane, email or mobile).</p>
+                  <p className="slider-list-item">
+                    Users can be uniquely identified by several optional fields
+                    (e.g. id. usemane, email or mobile).
+                  </p>
                 </div>
                 <div className="slider-list-item-row">
                   <p className="slider-list-item">•</p>
-                  <p className="slider-list-item">Each user object supports general-purpose fields for verifying identity information (e.g. first name, last name, profile photo, birth date, gender,
-etc.).</p>
+                  <p className="slider-list-item">
+                    Each user object supports general-purpose fields for
+                    verifying identity information (e.g. first name, last name,
+                    profile photo, birth date, gender, etc.).
+                  </p>
                 </div>
                 <div className="slider-list-item-row">
                   <p className="slider-list-item">•</p>
-                  <p className="slider-list-item">JSON metadata field is available for capturing any additional relevant
-information.</p>
+                  <p className="slider-list-item">
+                    JSON metadata field is available for capturing any
+                    additional relevant information.
+                  </p>
                 </div>
               </ul>
             </div>
           </div>
           <div>
-            <img src={placeholderImage} alt="placeholder-image"/>
+            <img src={placeholderImage} alt="placeholder-image" />
           </div>
         </SwiperSlide>
       </Swiper>
+      <button>Left Arrow</button>
     </div>
   );
 }
