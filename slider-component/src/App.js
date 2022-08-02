@@ -48,8 +48,6 @@ export default function App() {
                   <p className="slider-list-item">
                     JSON metadata field is available for capturing any
                     additional relevant information.
-                    
-                    <button onClick={() => swiper.slideNext()}>Right Arrow</button>
                   </p>
                 </div>
               </ul>
@@ -178,7 +176,6 @@ export default function App() {
           </div>
         </SwiperSlide>
       </Swiper>
-      <button>Left Arrow</button>
     </div>
   );
 }
