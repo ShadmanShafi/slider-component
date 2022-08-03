@@ -75,6 +75,8 @@ body {
 
 .bullet-point {
   color: #3f23e4;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .slider-item-image {
@@ -87,7 +89,7 @@ body {
 .slider-list-item-row {
   max-width: 35vw;
   max-height: 10vh;
-  gap: 10px;
+  gap: 12px;
   display: flex;
   flex-direction: row;
 }
