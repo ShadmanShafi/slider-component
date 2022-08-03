@@ -9,12 +9,15 @@
 body {
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   background: #eee;
+  
 }
 
 .slider-entire-component-div {
   background-color: #5d48f8;
   margin: 0 100px 0 100px;
-  border-radius: 40px;
+  border-radius: 35px;
+  display: flex;
+  flex-direction: row;
 }
 
 .swiper {
@@ -26,7 +29,7 @@ body {
   font-size: 18px;
   color: #ffffff;
   display: flex;
-  padding: 60px;
+  padding: 60px 60px 80px 80px;
 }
 
 .swiper-slide img {
@@ -75,7 +78,10 @@ body {
 }
 
 .slider-item-image {
-  size: 80vh !important;
+  margin: 70px 100px 0 0;
+  width: 60vh !important;
+  height: auto;
+  object-fit: contain !important;
 }
 
 .slider-list-item-row {
@@ -90,7 +96,7 @@ body {
   background-color: white;
   position: relative;
   top: 53vh !important;
-  margin: 77vw;
+  margin: 46vw;
   min-height: 30px;
   max-height: 30px;
   min-width: 30px;

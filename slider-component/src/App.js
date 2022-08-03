@@ -18,7 +18,12 @@ export default function App() {
 
   return (
     <div className="slider-entire-component-div">
-      <Swiper navigation={true} modules={[Navigation]} className="mySwiper swiper-button-black" navi>
+      <Swiper
+        navigation={true}
+        modules={[Navigation]}
+        className="mySwiper swiper-button-black"
+        navi
+      >
         {/*Slide 1*/}
         <SwiperSlide>
           <div className="slider-content-column">
@@ -52,9 +57,6 @@ export default function App() {
                 </div>
               </ul>
             </div>
-          </div>
-          <div>
-            <img className="slider-item-image" src={placeholderImage} alt="placeholder-image"/>
           </div>
           
         </SwiperSlide>
@@ -93,9 +95,6 @@ export default function App() {
               </ul>
             </div>
           </div>
-          <div>
-            <img src={placeholderImage} alt="placeholder-image" />
-          </div>
         </SwiperSlide>
 
         {/*Slide 3*/}
@@ -132,9 +131,6 @@ export default function App() {
               </ul>
             </div>
           </div>
-          <div>
-            <img src={placeholderImage} alt="placeholder-image" />
-          </div>
         </SwiperSlide>
 
         {/*Slide 4*/}
@@ -170,12 +166,16 @@ export default function App() {
                 </div>
               </ul>
             </div>
-          </div>
-          <div>
-            <img src={placeholderImage} alt="placeholder-image" />
-          </div>
+          </div>   
         </SwiperSlide>
       </Swiper>
+      <div>
+        <img
+          className="slider-item-image"
+          src={placeholderImage}
+          alt="placeholder-image"
+        />
+      </div>
     </div>
   );
 }
