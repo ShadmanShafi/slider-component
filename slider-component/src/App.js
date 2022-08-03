@@ -18,7 +18,7 @@ export default function App() {
 
   return (
     <div className="slider-entire-component-div">
-      <Swiper navigation={true} modules={[Navigation]} className="mySwiper" navi>
+      <Swiper navigation={true} modules={[Navigation]} className="mySwiper swiper-button-black" navi>
         {/*Slide 1*/}
         <SwiperSlide>
           <div className="slider-content-column">
@@ -29,14 +29,14 @@ export default function App() {
               <p className="slider-list-item-title">Identity</p>
               <ul>
                 <div className="slider-list-item-row">
-                  <p className="slider-list-item">•</p>
+                  <p className="slider-list-item bullet-point">•</p>
                   <p className="slider-list-item">
                     Users can be uniquely identified by several optional fields
                     (e.g. id. usemane, email or mobile).
                   </p>
                 </div>
                 <div className="slider-list-item-row">
-                  <p className="slider-list-item">•</p>
+                  <p className="slider-list-item bullet-point">•</p>
                   <p className="slider-list-item">
                     Each user object supports general-purpose fields for
                     verifying identity information (e.g. first name, last name,
@@ -44,7 +44,7 @@ export default function App() {
                   </p>
                 </div>
                 <div className="slider-list-item-row">
-                  <p className="slider-list-item">•</p>
+                  <p className="slider-list-item bullet-point">•</p>
                   <p className="slider-list-item">
                     JSON metadata field is available for capturing any
                     additional relevant information.
@@ -54,7 +54,7 @@ export default function App() {
             </div>
           </div>
           <div>
-            <img src={placeholderImage} alt="placeholder-image" />
+            <img className="slider-item-image" src={placeholderImage} alt="placeholder-image"/>
           </div>
           
         </SwiperSlide>
@@ -69,14 +69,14 @@ export default function App() {
               <p className="slider-list-item-title">Identity Second</p>
               <ul>
                 <div className="slider-list-item-row">
-                  <p className="slider-list-item">•</p>
+                  <p className="slider-list-item bullet-point">•</p>
                   <p className="slider-list-item">
                     Users can be uniquely identified by several optional fields
                     (e.g. id. usemane, email or mobile).
                   </p>
                 </div>
                 <div className="slider-list-item-row">
-                  <p className="slider-list-item">•</p>
+                  <p className="slider-list-item bullet-point">•</p>
                   <p className="slider-list-item">
                     Each user object supports general-purpose fields for
                     verifying identity information (e.g. first name, last name,
@@ -84,7 +84,7 @@ export default function App() {
                   </p>
                 </div>
                 <div className="slider-list-item-row">
-                  <p className="slider-list-item">•</p>
+                  <p className="slider-list-item bullet-point">•</p>
                   <p className="slider-list-item">
                     JSON metadata field is available for capturing any
                     additional relevant information.
@@ -108,14 +108,14 @@ export default function App() {
               <p className="slider-list-item-title">Identity Third</p>
               <ul>
                 <div className="slider-list-item-row">
-                  <p className="slider-list-item">•</p>
+                  <p className="slider-list-item bullet-point">•</p>
                   <p className="slider-list-item">
                     Users can be uniquely identified by several optional fields
                     (e.g. id. usemane, email or mobile).
                   </p>
                 </div>
                 <div className="slider-list-item-row">
-                  <p className="slider-list-item">•</p>
+                  <p className="slider-list-item bullet-point">•</p>
                   <p className="slider-list-item">
                     Each user object supports general-purpose fields for
                     verifying identity information (e.g. first name, last name,
@@ -123,7 +123,7 @@ export default function App() {
                   </p>
                 </div>
                 <div className="slider-list-item-row">
-                  <p className="slider-list-item">•</p>
+                  <p className="slider-list-item bullet-point">•</p>
                   <p className="slider-list-item">
                     JSON metadata field is available for capturing any
                     additional relevant information.
@@ -147,14 +147,14 @@ export default function App() {
               <p className="slider-list-item-title">Identity Fourth</p>
               <ul>
                 <div className="slider-list-item-row">
-                  <p className="slider-list-item">•</p>
+                  <p className="slider-list-item bullet-point">•</p>
                   <p className="slider-list-item">
                     Users can be uniquely identified by several optional fields
                     (e.g. id. usemane, email or mobile).
                   </p>
                 </div>
                 <div className="slider-list-item-row">
-                  <p className="slider-list-item">•</p>
+                  <p className="slider-list-item bullet-point">•</p>
                   <p className="slider-list-item">
                     Each user object supports general-purpose fields for
                     verifying identity information (e.g. first name, last name,
@@ -162,7 +162,7 @@ export default function App() {
                   </p>
                 </div>
                 <div className="slider-list-item-row">
-                  <p className="slider-list-item">•</p>
+                  <p className="slider-list-item bullet-point">•</p>
                   <p className="slider-list-item">
                     JSON metadata field is available for capturing any
                     additional relevant information.
